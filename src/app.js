@@ -11,20 +11,14 @@ window.onload = function() {
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
   let extension = [".com", ".es"];
+
   for (let i = 0; i < pronoun.length; i++) {
-    console.log(pronoun[0].concat(adj[i], noun[0], extension[0]));
-    console.log(pronoun[1].concat(adj[0], noun[0], extension[0]));
-  }
-  for (let i = 0; i < pronoun.length; i++) {
-    console.log(pronoun[0].concat(adj[i], noun[0], extension[1]));
-    console.log(pronoun[1].concat(adj[0], noun[0], extension[1]));
-  }
-  for (let i = 0; i < pronoun.length; i++) {
-    console.log(pronoun[0].concat(adj[i], noun[1], extension[0]));
-    console.log(pronoun[1].concat(adj[0], noun[1], extension[0]));
-  }
-  for (let i = 0; i < pronoun.length; i++) {
-    console.log(pronoun[0].concat(adj[i], noun[1], extension[1]));
-    console.log(pronoun[1].concat(adj[0], noun[1], extension[1]));
+    for (let x = 0; x < adj.length; x++) {
+      for (let y = 0; y < noun.length; y++) {
+        for (let z = 0; z < extension.length; z++) {
+          console.log(pronoun[i].concat(adj[x], noun[y], extension[z]));
+        }
+      }
+    }
   }
 };
